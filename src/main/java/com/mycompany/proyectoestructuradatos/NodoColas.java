@@ -10,4 +10,35 @@ package com.mycompany.proyectoestructuradatos;
  */
 public class NodoColas {
     
+    private Paciente paciente;      
+    private NodoColas siguiente;     
+
+    public NodoColas() {
+    }
+
+    public NodoColas(Paciente paciente) {
+        this.paciente = paciente;
+        this.siguiente = null;
+    }
+
+    public Paciente getPaciente() {
+        return paciente;
+    }
+
+    public NodoColas getSiguiente() {
+        return siguiente;
+    }
+
+    public void setPaciente(Paciente paciente) {
+        this.paciente = paciente;
+    }
+
+    public void setSiguiente(NodoColas siguiente) {
+        this.siguiente = siguiente;
+    }
+    
+    
+    
+    
+    
 }

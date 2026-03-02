@@ -10,21 +10,19 @@ import java.util.Date;
  *
  * @author raulb
  */
-public class Paciente {
+public class Quejas {
     
-    private String numeroFicha;
-    private String cedula;
-    private String nombre;
-    private Date fechaHoraLlegada;
+    private String numeroFicha, cedula, motivo;
+    private Date fechaHoraSalida;
 
-    public Paciente() {
+    public Quejas() {
     }
 
-    public Paciente(String numeroFicha, String cedula, String nombre, Date fechaHoraLlegada) {
+    public Quejas(String numeroFicha, String cedula, String motivo, Date fechaHoraSalida) {
         this.numeroFicha = numeroFicha;
         this.cedula = cedula;
-        this.nombre = nombre;
-        this.fechaHoraLlegada = fechaHoraLlegada;
+        this.motivo = motivo;
+        this.fechaHoraSalida = fechaHoraSalida;
     }
 
     public String getNumeroFicha() {
@@ -43,23 +41,21 @@ public class Paciente {
         this.cedula = cedula;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getMotivo() {
+        return motivo;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setMotivo(String motivo) {
+        this.motivo = motivo;
     }
 
-    public Date getFechaHoraLlegada() {
-        return fechaHoraLlegada;
+    public Date getFechaHoraSalida() {
+        return fechaHoraSalida;
     }
 
-    public void setFechaHoraLlegada(Date fechaHoraLlegada) {
-        this.fechaHoraLlegada = fechaHoraLlegada;
+    public void setFechaHoraSalida(Date fechaHoraSalida) {
+        this.fechaHoraSalida = fechaHoraSalida;
     }
-    
-    
     
     
     
